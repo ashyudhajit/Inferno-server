@@ -1,4 +1,4 @@
-
+ 
 /**************
   * GENERAL CSS *
   **************/
@@ -6,15 +6,15 @@
   body {
     background: #EEE url("http://imgur.com/ij6nkuE.jpg") no-repeat left fixed;
   }
-
-.button{color:black;background:#ff9966!important;border:solid 1px black!important}.menugroup 
-
-.button:hover,.menugroup 
-
+ 
+.button{color:black;background:#ff9966!important;border:solid 1px black!important}.menugroup
+ 
+.button:hover,.menugroup
+ 
 .button:active{color:white;background:#ff9966!important;border:solid 1px black!important
 }
    
-
+ 
  
   .astext{
     border: none;
@@ -87,38 +87,38 @@
     background: rgba(255, 204, 153, 0.79);
     border-color: black;
   }
-  
+ 
   .ps-room.ps-room-light.scrollable {
     background:rgba(255, 204, 153, 0.79);
     border-color: black;
   }
-  
+ 
   .roomlist a.ilink, .roomcounters button {
     border-color: black;
     color: black;
     background: white;
   }
-  
+ 
   .roomlist a.ilink:hover, .roomcounters button:hover {
     border-color: black;
     color: orange;
     background: white;
   }
-
-  
+ 
+ 
  
   button:hover {
     border: 1px solid #ffa500;
                        
   }
-  
+ 
   button {
     background:#ffa500;
     border-radius: 5px;
     color: #000000;
     border: 1px solid #ffa500;
   }
-  
+ 
   .infobox {
     border: 1px solid #0B1361;
     padding: 6px 6px;
@@ -142,7 +142,7 @@
     background-color: rgba(244, 244, 244, 0.8);
     border-bottom-color: #AAA;
   }
-  
+ 
   .userlist li button:hover {
     background: rgba(255, 255, 255, 0.8);
   }
@@ -168,15 +168,15 @@
  
   .header .logo {
     opacity: 0;
-
+ 
 }
 .menugroup {
-	border: 1px solid #d9d9d9;
-
+        border: 1px solid #d9d9d9;
+ 
 }
 .label {
-	text-shadow: none !important;
-	font-style: italic;
+        text-shadow: none !important;
+        font-style: italic;
 }
  
   .maintabbarbottom {
@@ -241,13 +241,13 @@
  
   .credits h2 {
     color: #2D3459;
-
+ 
 }
-
+ 
 .mainmenufooter a
-
-
-  
+ 
+ 
+ 
  
   a.subtle, .credits ul li p, .credits ul {
     color: #37348E;
@@ -262,7 +262,7 @@
     border-color: #ff6600;
     color: #000000;
     text-shadow: 0px 0px 2px #ff6600;
-                        
+                       
                     }
  
   .ps-popup a, .ps-popup a.ilink {
@@ -281,9 +281,9 @@
     border: 1px solid #ff6600;
     background-color: rgb(255, 153, 102);
   }
-  
-  
-  
+ 
+ 
+ 
   .ps-popup .buttonbar button:hover {
     background: #6AE68B;
   }
@@ -291,19 +291,19 @@
   .ps-overlay {
     background: rgba(0, 0, 0, 0.5);
     }
-  
+ 
   .ps-popup a {
     color: black;
   }
-  
+ 
   .ps-popup a.ilink {
     color: black;
   }
-  
+ 
   .ps-popup a.ilink:hover {
     color: blue;
   }
-  
+ 
   .ps-popup hr {
     border: none;
     border-bottom: 1px solid #7C000C;
@@ -339,7 +339,7 @@
     margin-bottom: 1px;
   }
 /*Battle CSS*/
-
+ 
   .backdrop {
     background: url(http://i.imgur.com/sgsCFwo.png) !important;
         opacity: 0.6;
@@ -431,10 +431,10 @@
     box-shadow:none;
                     }
     .nightclub {
-	background:#000;
-	margin:-3px
+        background:#000;
+        margin:-3px
   }
-  
+ 
   .pm-window h3 {
     border-color: #000000;
     background: rgb(255, 102, 0) url("") bottom right no-repeat;
@@ -442,17 +442,17 @@
     color:   #000000;
     text-shadow: 0px -1px 0px  #000000;
   }
-  
+ 
   .pm-window h3:hover {
     background: rgb(255, 163, 102) url("") bottom right no-repeat;
     background-position: 200px;
     color: #000000;
   }
-  
+ 
   .pm-window h3 small {
     color: #000000;
   }
-  
+ 
   .pm-window.focused h3, .pm-window.focused h3:hover {
     border-color: #0033CC;
     background: rgb(0, 153, 204) url("") bottom right no-repeat;
@@ -460,242 +460,266 @@
     color: #0033CC;
     text-shadow: 0px -1px 0px #0033CC;
   }
-  
+ 
   .pm-window h3:hover .minimizebutton, .pm-window h3 .closebutton, .pm-window h3 .minimizebutton {
     color:  #CCFFFF;
   }
-  
+ 
   .pm-window h3 .closebutton:hover {
     color:#CCFFFF;
   }
-  
+ 
   .pm-window h3 .minimizebutton:hover {
     color: #CCFFFF;
   }
-  
+ 
   .pm-window h3 .closebutton:hover + .minimizebutton {
     color: #CCFFFF !important;
   }
-  
+ 
   .message-pm {
     color:  #000000;
   }
-  
+ 
   .pm-window h3.pm-notifying {
     border-color: #3399ff;
     background: #3399ff;
     color: #0099FF;
     text-shadow: none;
   }
-  
+ 
   .pm-window h3.pm-notifying:hover {
     background: #99ccff;
   }
-  
+ 
   .pm-window h3.pm-notifying small {
     color:  #000000;
   }
-  
+ 
   .pm-window h3.pm-notifying .closebutton, .pm-window h3.pm-notifying .minimizebutton {
     color:#000000;
   }
-  
+ 
   .pm-window h3.pm-notifying .closebutton:hover {
     color: #000000;
   }
-  
+ 
   .pm-window h3.pm-notifying .minimizebutton:hover {
     color: #000000;
   }
-  
+ 
   .pm-window h3.pm-notifying .closebutton:hover + .minimizebutton {
     color: #000000 !important;
   }
-  
+ 
   .pm-log, .pm-window.focused .pm-log {
     border-color: #000000;
 }
-                    
+                   
 .userlist li button:hover {
-	background:rgba(244, 244, 244, 0.5)
+        background:rgba(244, 244, 244, 0.5)
   }
-
+ 
 /**************
   * Custom Colors *
   **************/
-
-.chat.chatmessage-traineralain  strong { 
+ 
+.chat.chatmessage-traineralain  strong {
     color:darkblue !important;
   }
-
-.chat.chatmessage-natm  strong { 
+ 
+.chat.chatmessage-natm  strong {
     color:purple !important;
   }
-
-.chat.chatmessage-ransei  strong { 
+ 
+.chat.chatmessage-ransei  strong {
     color:red !important;
   }
-
-.chat.chatmessage-camilas em { 
-	color: blue !important; 
+ 
+.chat.chatmessage-camilas em {
+        color: blue !important;
 }
-.chat.chatmessage-nick151 em { 
-	color: green !important; 
+.chat.chatmessage-nick151 em {
+        color: green !important;
 }
-.chat.chatmessage-fortunt em { 
-	color: #ff00ff !important; 
+.chat.chatmessage-fortunt em {
+        color: #ff00ff !important;
 }
-.chat.chatmessage-traineralain em { 
-	color: darkblue !important; 
+.chat.chatmessage-traineralain em {
+        color: darkblue !important;
 }
-.chat.chatmessage-natm em { 
-	color: #9900cc !important; 
+.chat.chatmessage-natm em {
+        color: #9900cc !important;
 }
-
-.chat.chatmessage-hppily  strong { 
+ 
+.chat.chatmessage-hppily  strong {
     color:pink !important;
   }
-
-.chat.chatmessage-camilas  strong { 
+ 
+.chat.chatmessage-camilas  strong {
     color:orange !important;
   }
-
-.chat.chatmessage-trublaze  strong { 
+ 
+.chat.chatmessage-trublaze  strong {
     color:#990000 !important;
   }
-
-.chat.chatmessage-hypershaymin  strong { 
+ 
+.chat.chatmessage-hypershaymin  strong {
     color:blue !important;
   }
-
-.chat.chatmessage-iriseevee  strong { 
+ 
+.chat.chatmessage-iriseevee  strong {
     color:#9900cc !important;
   }
-
-.chat.chatmessage-feverick  strong { 
+ 
+.chat.chatmessage-feverick  strong {
     color:white !important;
   }
-
-.chat.chatmessage-legacyprofkraze  strong { 
+ 
+.chat.chatmessage-legacyprofkraze  strong {
     color:gray !important;
   }
-
-.chat.chatmessage-nick151  strong { 
+ 
+.chat.chatmessage-nick151  strong {
     color:#ffcc00 !important;
   }
-
-.chat.chatmessage-partysover  strong { 
+ 
+.chat.chatmessage-partysover  strong {
     color:green !important;
   }
-
-.chat.chatmessage-natm  strong { 
+ 
+.chat.chatmessage-natm  strong {
     color:#ff33cc !important;
   }
-
-.chat.chatmessage-natm  strong { 
+ 
+.chat.chatmessage-natm  strong {
     color:#9900cc !important;
   }
-
-.chat.chatmessage-ggpfft  strong { 
+ 
+.chat.chatmessage-ggpfft  strong {
     color:black !important;
   }
-
-.chat.chatmessage-natm  strong { 
+ 
+.chat.chatmessage-natm  strong {
     color:#cc99ff !important;
   }
-
-.chat.chatmessage-nick151  strong { 
+ 
+.chat.chatmessage-nick151  strong {
     color:#cc9900 !important;
   }
-
-.chat.chatmessage-natm  strong { 
+ 
+.chat.chatmessage-natm  strong {
     color:#9900cc !important;
   }
-
-.chat.chatmessage-natm  strong { 
+ 
+.chat.chatmessage-natm  strong {
     color:#9900cc !important;
   }
-
-.chat.chatmessage-feverick  strong { 
+ 
+.chat.chatmessage-feverick  strong {
     color:#00FF00 !important;
   }
-
-.chat.chatmessage-feverick  strong { 
+ 
+.chat.chatmessage-feverick  strong {
     color:#00cc00 !important;
   }
-
-  #lobby-userlist-user-thunderren, #flygonfriends-userlist-user-thunderren, #casino-userlist-user-thunderren { 
-    background: rgba(244, 244, 244, 0.8) url("http://orig13.deviantart.net/2e4e/f/2015/062/b/5/shiny_the_flygon_icon_by_the_shiny_store-d8kbesg.gif") right no-repeat;
-  }
-
-  #lobby-userlist-user-hypershaymin, #1v1-userlist-user-hypershaymin, #casino-userlist-user-hypershaymin { 
-    background: rgba(244, 244, 244, 0.8) url("http://media.pldh.net/pokexycons/490.png") right no-repeat;
-  }
-
-.chat.chatmessage-ggdaca  strong { 
+ 
+.chat.chatmessage-ggdaca  strong {
     color:purple !important;
   }
-
-.chat.chatmessage-hppily  strong { 
+ 
+.chat.chatmessage-hppily  strong {
     color:#ff00cc !important;
   }
-
-.chat.chatmessage-mystifi  strong { 
+ 
+.chat.chatmessage-mystifi  strong {
     color:#006ee6 !important;
   }
-
-.chat.chatmessage-fortunt  strong { 
+ 
+.chat.chatmessage-fortunt  strong {
     color:#ff00ff !important;
+  }
+   
+.chat.chatmessage-firestatics  strong {
+    color:#B71510 !important;
+  }
+ 
+.chat.chatmessage-chimechoo  strong {
+    color:#9D068E !important;
+  }
+ 
+.chat.chatmessage-nerderator  strong {
+    color:#ff0000 !important;
   }
 
 /*************************************
-  * Userlist Icons/ More Custom Colors *
+  * Userlist Icons *
   ************************************/
-
-  #lobby-userlist-user-traineralain, #staff-userlist-user-traineralain, #shadowbanroom-userlist-user-traineralain, #tournaments-userlist-user-traineralain, #casino-userlist-user-traineralain, #femalehq-userlist-user-traineralain, #catchandevolve-userlist-user-traineralain, #smogontiers-userlist-user-traineralain, #leagueoflegends-userlist-user-traineralain, #1v1-userlist-user-traineralain, #bbc-userlist-user-traineralain, #roleplaying-userlist-user-traineralain, #theartbotshop-userlist-user-traineralain, #theranseiregion-userlist-user-traineralain, #thehangout-userlist-user-traineralain, #cancerlobbyshitposting-userlist-user-traineralain, #smashbros-userlist-user-traineralain, #monotype-userlist-user-traineralain { 
+ 
+  #lobby-userlist-user-traineralain, #staff-userlist-user-traineralain, #shadowbanroom-userlist-user-traineralain, #tournaments-userlist-user-traineralain, #casino-userlist-user-traineralain, #femalehq-userlist-user-traineralain, #catchandevolve-userlist-user-traineralain, #smogontiers-userlist-user-traineralain, #leagueoflegends-userlist-user-traineralain, #1v1-userlist-user-traineralain, #bbc-userlist-user-traineralain, #roleplaying-userlist-user-traineralain, #theartbotshop-userlist-user-traineralain, #theranseiregion-userlist-user-traineralain, #thehangout-userlist-user-traineralain, #cancerlobbyshitposting-userlist-user-traineralain, #smashbros-userlist-user-traineralain, #monotype-userlist-user-traineralain {
     background: rgba(244, 244, 244, 0.8) url("http://media.pldh.net/pokexycons/006-mega-x.png") right no-repeat;
   }
-
-  #lobby-userlist-user-traineralain  em.group, #staff-userlist-user-traineralain  em.group, #shadowbanroom-userlist-user-traineralain  em.group, #casino-userlist-user-traineralain  em.group, #tournaments-userlist-user-traineralain  em.group, #femalehq-userlist-user-traineralain  em.group, #catchevolve-userlist-user-traineralain  em.group, #smashbros-userlist-user-traineralain  em.group, #1v1-userlist-user-traineralain  em.group, #tournaments-userlist-user-traineralain  em.group, #bbc-userlist-user-traineralain  em.group, #smogontiers-userlist-user-traineralain  em.group, #roleplaying-userlist-user-traineralain  em.group, #thehangout-userlist-user-traineralain  em.group, #theartbotshop-userlist-user-traineralain  em.group, #theranseiregion-userlist-user-traineralain  em.group, #cancerlobbyshitposting-userlist-user-traineralain  em.group, #monotype-userlist-user-traineralain  em.group, #shadowleague-userlist-user-traineralain  em.group { 
+ 
+  #lobby-userlist-user-traineralain  em.group, #staff-userlist-user-traineralain  em.group, #shadowbanroom-userlist-user-traineralain  em.group, #casino-userlist-user-traineralain  em.group, #tournaments-userlist-user-traineralain  em.group, #femalehq-userlist-user-traineralain  em.group, #catchevolve-userlist-user-traineralain  em.group, #smashbros-userlist-user-traineralain  em.group, #1v1-userlist-user-traineralain  em.group, #tournaments-userlist-user-traineralain  em.group, #bbc-userlist-user-traineralain  em.group, #smogontiers-userlist-user-traineralain  em.group, #roleplaying-userlist-user-traineralain  em.group, #thehangout-userlist-user-traineralain  em.group, #theartbotshop-userlist-user-traineralain  em.group, #theranseiregion-userlist-user-traineralain  em.group, #cancerlobbyshitposting-userlist-user-traineralain  em.group, #monotype-userlist-user-traineralain  em.group, #shadowleague-userlist-user-traineralain  em.group {
     color:#00ffff;
   }
-
-  #lobby-userlist-user-nick151  em.group, #staff-userlist-user-nick151  em.group, #casino-userlist-user-nick151  em.group { 
+ 
+  #lobby-userlist-user-nick151  em.group, #staff-userlist-user-nick151  em.group, #casino-userlist-user-nick151  em.group {
     color:red;
   }
-
-  #lobby-userlist-user-nick151, #staff-userlist-user-nick151, #casino-userlist-user-nick151 { 
+ 
+  #lobby-userlist-user-nick151, #staff-userlist-user-nick151, #casino-userlist-user-nick151 {
     background: rgba(244, 244, 244, 0.8) url("http://i.imgur.com/2TGk661.png") right no-repeat;
   }
-
-  #lobby-userlist-user-shiryuki  em.group, #casino-userlist-user-shiryuki  em.group, #staff-userlist-user-shiryuki  em.group { 
+ 
+  #lobby-userlist-user-shiryuki  em.group, #casino-userlist-user-shiryuki  em.group, #staff-userlist-user-shiryuki  em.group {
     color:red;
   }
-
-  #tournaments-userlist-user-ranseihttpspritespokecheckorgsicon384png, #theranseiregion-userlist-user-ranseihttpspritespokecheckorgsicon384png { 
+ 
+  #tournaments-userlist-user-ranseihttpspritespokecheckorgsicon384png, #theranseiregion-userlist-user-ranseihttpspritespokecheckorgsicon384png {
     background: rgba(244, 244, 244, 0.8) url("Lobby") right no-repeat;
   }
-
-  #lobby-userlist-user-ransei, #tournaments-userlist-user-ransei, #theranseiregion-userlist-user-ransei { 
+ 
+  #lobby-userlist-user-ransei, #tournaments-userlist-user-ransei, #theranseiregion-userlist-user-ransei {
     background: rgba(244, 244, 244, 0.8) url("http://sprites.pokecheck.org/sicon/384.png") right no-repeat;
   }
-
-  #lobby-userlist-user-camilas, #casino-userlist-user-camilas, #tournaments-userlist-user-camilas { 
+ 
+  #lobby-userlist-user-camilas, #casino-userlist-user-camilas, #tournaments-userlist-user-camilas {
     background: rgba(244, 244, 244, 0.8) url("http://imgur.com/7rdvKm8.gif") right no-repeat;
   }
-
-  #lobby-userlist-user-camilas, #casino-userlist-user-camilas, #staff-userlist-user-camilas { 
+ 
+  #lobby-userlist-user-camilas, #casino-userlist-user-camilas, #staff-userlist-user-camilas {
     background: rgba(244, 244, 244, 0.8) url("https://raw.githubusercontent.com/msikma/pokesprite/master/icons/pokemon/shiny/rayquaza-mega.png") right no-repeat;
   }
-
-  #staff-userlist-user-neowulf, #lobby-userlist-user-neowulf, #casino-userlist-user-neowulf { 
+ 
+  #staff-userlist-user-neowulf, #lobby-userlist-user-neowulf, #casino-userlist-user-neowulf {
     background: rgba(244, 244, 244, 0.8) url("http://vignette3.wikia.nocookie.net/pokemon/images/0/03/212M.png/revision/latest?cb=20131021093532") right no-repeat;
   }
-
-  #lobby-userlist-user-natm { 
+ 
+  #lobby-userlist-user-natm {
     background: rgba(244, 244, 244, 0.8) url("http://media-cerulean.cursecdn.com/attachments/6/427/icon-absol.png") right no-repeat;
   }
-
-  #staff-userlist-user-neowulf, #lobby-userlist-user-neowulf, #casino-userlist-user-neowulf { 
+ 
+  #staff-userlist-user-neowulf, #lobby-userlist-user-neowulf, #casino-userlist-user-neowulf {
     background: rgba(244, 244, 244, 0.8) url("http://pldh.net/media/pokexycons/212-mega.png") right no-repeat;
+  }
+ 
+  #lobby-userlist-user-thunderren, #flygonfriends-userlist-user-thunderren, #catchandevolve-userlist-user-thunderren {
+    background: rgba(244, 244, 244, 0.8) url("gray") right no-repeat;
+  }
+ 
+  #lobby-userlist-user-goalie, #theranseiregion-userlist-user-goalie, #smogontiers-userlist-user-goalie {
+    background: rgba(244, 244, 244, 0.8) url("http://orig13.deviantart.net/2e4e/f/2015/062/b/5/shiny_the_flygon_icon_by_the_shiny_store-d8kbesg.gif") right no-repeat;
+  }
+ 
+  #lobby-userlist-user-chimechoo, #casino-userlist-user-chimechoo, #portugus-userlist-user-chimechoo {
+    background: rgba(244, 244, 244, 0.8) url("http://pldh.net/media/pokexycons/280.png") right no-repeat;
+  }
+ 
+  #lobby-userlist-user-thunderren, #flygonfriends-userlist-user-thunderren, #casino-userlist-user-thunderren {
+    background: rgba(244, 244, 244, 0.8) url("http://orig13.deviantart.net/2e4e/f/2015/062/b/5/shiny_the_flygon_icon_by_the_shiny_store-d8kbesg.gif") right no-repeat;
+  }
+ 
+  #lobby-userlist-user-hypershaymin, #1v1-userlist-user-hypershaymin, #casino-userlist-user-hypershaymin {
+    background: rgba(244, 244, 244, 0.8) url("http://media.pldh.net/pokexycons/490.png") right no-repeat;
   }
