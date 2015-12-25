@@ -79,7 +79,23 @@ exports.commands = {
 			}
 
 		}
-		function showProfile() {
+
+	function getStatus (user) {
+			if (!Users(user)) return false;
+			if (Users(user)) {
+				var status = Users(users).status;
+			}
+			return status;
+		}
+function lastActive (user) {
+			if (!Users(user)) return false;
+			var time = Users(user).lastActive;
+			if (!time) return "hasn't talked yet";
+			if (Users(user)) {
+				var active = moment(time).fromNow();
+			}
+			return active;
+		}function showProfile() {
 			var seenOutput = '';					
 			var profile = '';
                         profile += '<img src="' + avatar + '" height=80 width=80 align=left>';
