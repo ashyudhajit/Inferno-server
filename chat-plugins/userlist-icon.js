@@ -6,13 +6,14 @@ function writeIconCSS() {
 }
  
 exports.commands = {
-        sfis: function (target, room, user) {
-        if (!this.can('eval')) return this.errorReply("Access denied.");
+        iconset: function (target, room, user) {
+        var permission = 'hotpatch';
+        if (!user.can(permission, null, room)) return this.errorReply("/iconset - Access denied.");
  
                 var args = target.split(',');
                 if (args.length < 3) return this.parse('/help seticon');
                 var username = toId(args.shift());
-                var image = 'background: rgba(244, 244, 244, 0.8) url("' + args.shift().trim() + '") right no-repeat;';
+                var image = 'background: (transparent) url("' + args.shift().trim() + '") right no-repeat;';
                 selectors = '\n\n' + '  #' + toId(args.shift()) + '-userlist-user-' + username;
                 args.forEach(function (room) {
                         selectors += ', #' + toId(room) + '-userlist-user-' + username;
@@ -22,5 +23,5 @@ exports.commands = {
                 this.privateModCommand("(" + user.name + " has set an icon to " + username + ")");
                 writeIconCSS();
         },
-        seticonhelp: ["/sfis [username], [image], [room 1], [room 2], etc. - Sets an icon to a user in chosen rooms. Credits goes to Master Float in this."]
+        seticonhelp: ["/iconset [username], [image], [room 1], [room 2], etc. - Sets an icon to a user in chosen rooms."]
 };
