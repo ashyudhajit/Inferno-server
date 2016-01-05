@@ -263,11 +263,13 @@ exports.grouplist = [
 		globalonly: true
 	},
 	{
-		symbol: '¿',
-		id: "developer",
+		symbol: '∆',
+		id: "Developer",
 		name: "Developer",
 		inherit: '&',
 		globalonly: true,
+                roomleader: true,
+                setavatar: true,
 
 	},
 	{
