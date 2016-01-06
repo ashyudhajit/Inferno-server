@@ -132,4 +132,10 @@ exports.commands = {
 	mimis: function (target, room, user) {
 		this.parse('/away MIMIS', room, user);
 	}
+       coding: function (target, room, user) {
+		this.parse('/away CODING', room, user);
+	}
+       code: function (target, room, user) {
+		this.parse('/away CODE',room, user);
+	}
 };
