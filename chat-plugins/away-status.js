@@ -1,3 +1,4 @@
+//Away.js by haji.
 var color = require('../config/color');
 
 var bubbleLetterMap = new Map([
@@ -80,6 +81,7 @@ exports.commands = {
 		user.isAway = false;
 		if (user.can('lock', null, room)) this.add("|raw|-- <font color='" + color(user.userid) + "'><strong>" + Tools.escapeHTML(newName) + "</strong></font> is no longer " + status.toLowerCase() + ".");
 	},
+//Some custom set away statuses.
 
 	afk: function (target, room, user) {
 		this.parse('/away AFK', room, user);
