@@ -87,9 +87,9 @@ exports.commands = {
 			if (getFlag(toId(username))) profile += '&nbsp;<font color=' + formatHex + '><b>Name:</b></font> <b><font color="' + hashColor(toId(username)) + '">' + Tools.escapeHTML(username) + '</font></b>' + getFlag(toId(username)) + '<br />';
 			profile += '&nbsp;<font color=' + formatHex + '><b>Registered:</b></font> ' + regdate + '<br />';
 			if (!Users.vips[userid]) profile += '&nbsp;<font color=' + formatHex + '><b>Rank: </font></b>' + userGroup + '<br />';
-			if (Users.vips[userid]) profile += '&nbsp;<font color=' + formatHex + '><b>Rank: </font></b>' + userGroup + ' (<font color=#800000><b>Inferno DEV</b></font>)<br />';
-			if (online) profile += '&nbsp;<font color=' + formatHex + '><b>Status: </font></b><font color=green>Currently Online</font><br />';
-			if (!online) profile += '&nbsp;<font color=' + formatHex + '><b>Status: </font></b><font color=red><b>OFFLINE</b><br />';
+			if (Users.vips[userid]) profile += '&nbsp;<font color=' + formatHex + '><b>Rank: </font></b>' + userGroup + ' (<font color=#48D1CC><b>DEV User</b></font>)<br />';
+			if (online) profile += '&nbsp;<font color=' + formatHex + '><b>Status: </font></b><font color=#5DFC0A>Currently Online</font><br />';
+			if (!online) profile += '&nbsp;<font color=' + formatHex + '><b>Status: </font></b><font color=#FF0000><b>OFFLINE</b><br />';
 			profile += '<br clear="all">';
 			self.sendReplyBox(profile);
 			room.update();
