@@ -1,6 +1,7 @@
+//Economy.js by haji~~~~
+
 var fs = require('fs');
 var path = require('path');
-
 var shop = [
 	['Fix', 'Buys the ability to alter your current custom avatar or trainer card. (don\'t buy if you have neither)', 5],
 	['League Room', 'Purchases a room at a reduced rate for use with a league.  A roster must be supplied with at least 10 members for this room.', 5],
