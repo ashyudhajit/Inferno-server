@@ -3,7 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var shop = [
-	['Fix', 'Buys the ability to alter your current custom avatar or trainer card. (don\'t buy if you have neither)', 5],
+	['Fix', 'Buys the ability to alter your current custom avatar or trainer card or icon. (don\'t buy if you have neither)', 5],
 	['League Room', 'Purchases a room at a reduced rate for use with a league.  A roster must be supplied with at least 10 members for this room.', 5],
 	['Symbol', 'Buys a custom symbol to go infront of name and puts you at top of userlist. (Temporary until restart, certain symbols are blocked)', 5],
 	['Ticket', 'Buys a lottery ticket for a chance to win big money.', 5],
@@ -13,13 +13,13 @@ var shop = [
 	['Trainer Card', 'Buys a trainer card which shows information through a command. (You supply, can be refused)', 20],
 	['Room', 'Buys a chatroom for you to own. (within reason, can be refused)', 25],
         ['Symbol Color', 'Buys a Symbol Color that can be applied to the userlist of 3 rooms.', 50],
-	['Userlist Icon', 'Buys a userlist icon that can be applied to the userlist of 3 rooms.', 50],
+	['Userlist Icon', 'Buys a userlist icon that can be applied to the userlist of 3 rooms.+20 for each room.', 100],
 	['Name Color', 'Buys an command in which you can change your color using a gradient / ordinary color. You can only be able to use this color.', 100],
         ['Official Room Status', 'Promotes your room to be an official room. Will be de-officialed if not treated well.', 500],
 	['Global Voice', 'Promotes you to global voice. Dont abuse it.', 1000],
 	['Custom Message', 'Buys a custom message which can be applied to your username and will be shown when you talk in the chat or talk in PMs.', 1500],
-	['Custom Color', 'Buys a custom color which can be applied to your username and will be shown when you talk in the chat or talk in PMs.', 2000]
-];
+	['Custom Color', 'Buys a custom color which can be applied to your username and will be shown when you talk in the chat or talk in PMs.', 2000],
+        ['AOTD', 'gets ur room aotd access. ', 500];
 
 var shopDisplay = getShopDisplay(shop);
 
@@ -468,10 +468,10 @@ exports.commands = {
 		// Prevent ending a dice game too early.
 		room.dice.startTime = Date.now();
 
-			var descStyle = 'border-radius: 5px; border: 1px solid #3399ff; background: #66ccff; color: black;';
+			var descStyle = 'border-radius: 5px; border: 1px solid #3399ff; background: #ffffc; color: black;';
 
 
-		room.addRaw("<div class='infobox'><h2><center><font color=#000000>" + user.name + " has started a dice game for </font><font color=#e60000>" + amount + "</font><font color=#215E21>" + currencyName(amount) + ".</font><br><button name='send' value='/joindice'>Click to join.</button></center></h2></div>");
+		room.addRaw("<div class='infobox'><h2><center><background src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP1pz_rFGGZBE2cehBMJg6TVy8CmRrx8nRtlRHNlRQKuFyG6wT"<font color=#4d4dff>" + user.name + " has started a dice game for </font><font color=#e60000>" + amount + "</font><font color=#215E21>" + currencyName(amount) + ".</font><br><button name='send' value='/joindice'>Join!</button></center></h2></div>");
 	},
 	startdicehelp: ["/startdice [bet] - Start a dice game to gamble for money."],
 
@@ -488,7 +488,7 @@ exports.commands = {
 				if (err) throw err;
 				if (!room.dice.p1) {
 					room.dice.p1 = user.userid;
-					room.addRaw("<b><font color=blue>" + user.name + " has joined the dice game.</b>");
+					room.addRaw("<b><font color=green>" + user.name + " has joined the dice game.</b>");
 					return room.update();
 				}
 				room.dice.p2 = user.userid;
