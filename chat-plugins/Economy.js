@@ -35,7 +35,7 @@ var shopDisplay = getShopDisplay(shop);
  * @returns {String}
  */
 function currencyName(amount) {
-	var name = " SF Buck";
+	var name = "Buck";
 	return amount === 1 ? name : name + "s";
 }
 
@@ -73,7 +73,7 @@ function logMoney(message) {
  * @return {String} display
  */
 function getShopDisplay(shop) {
-	var display = "<center><b>Shadowfire Shop</b></center><table border='15' cellspacing='13' cellpadding='12' width='100%'>" +
+	var display = "<center><b>Haji's bucks Shop</b></center><table border='15' cellspacing='13' cellpadding='12' width='100%'>" +
 					"<tbody><tr><th>Command</th><th>Description</th><th>Cost</th></tr>";
 	var start = 0;
 	while (start < shop.length) {
@@ -301,8 +301,8 @@ exports.commands = {
 		} else {
 			var buttonStyle = '';
 			var topStyle = 'background: linear-gradient(10deg, #ff9933, #ff9933 ); color: ; border: 1px solid black; padding: 2px; border-radius: 5px;';
-			var descStyle = 'border-radius: 5px; border: 1px solid #ff964d; background: #ff781a; color: black;';
-			var top = '<td><center><font color="#b34900"><b><p> Inferno Shop</b></p></font><table style="' + topStyle + '" border="5" cellspacing ="5" cellpadding="5"><tr><th>Item</th><th>Description</th><th>Cost</th></tr>';
+			var descStyle = 'border-radius: 5px; border: 1px solid #ff964d; background: #1aff7d; color: black;';
+			var top = '<td><center><font color="#b34900"><b><p> Haji's Bucks Shop</b></p></font><table style="' + topStyle + '" border="5" cellspacing ="5" cellpadding="5"><tr><th>Item</th><th>Description</th><th>Cost</th></tr>';
 			var bottom = '<table><td style="' + descStyle + '">To buy an item from the shop, use /buy command. If you want to know how to get money, do /getbucks.</td>';
 			function table(item, desc, price) {
 				return '<tr><td style="' + descStyle + '"><button title="Click this button to buy a(n) ' + item + ' from the shop" style="' + buttonStyle + '" name="send" value="/buy ' + item + '">' + item + '</button></td><td style="' + descStyle + '">' + desc + '</td><td style="' + descStyle + '">' + price + '</td></tr>';
@@ -321,8 +321,13 @@ exports.commands = {
 				table("Symbol Color", "Buys a symbol color that can be applied to the userlist of 3 rooms.", 50) +
 				table("Userlist Icon", "Buys a userlist icon that can be applied to the userlist of 3 rooms.", 50) +
 				table("Name Color", "Buys an command in which you can change your color using a gradient / ordinary color. You can only be able to use this color.", 100) +
-				table("Official Room Status", "Promotes your room to be official for sometime. ( Will be de-officialed if not taken care of wisely)", 500) +
-				table("Global Voice", "Promotes you to Global Voice. Do not abuse this rank, or else it will get you demoted from this rank.", 1000) +
+				table("Official Room Status", "Promotes your room to be official for sometime. ( Will be de-officialed if not taken care of wisely)", 500)+
+
+table("Official Room Status", "Promotes your room to be official for sometime. ( Will be de-officialed if not taken care of wisely)", 500) +
+
+table("AOTD", "Gets ur room special aotd access", 500) +
+
+table("Global Voice", "Promotes you to Global Voice. Do not abuse this rank, or else it will get you demoted from this rank.", 1000) +
 				table("Custom Message", "Buys a custom message which can be applied to your messages and will be shown when you talk in the chat or talk in PMs.", 1500) +
 				table("Custom Color", "Buys a custom color which can be applied to your username and will be shown when you talk in the chat or talk in PMs.", 2000) +
 				bottom
