@@ -28,7 +28,6 @@
          return new Promise(function(resolve, reject) {
              request(link, function(err, res, body) {
                 if (!err && res.statusCode == 200) {
-                     var title = $("title").text();
                      var str = '<a href="' + link + '"><button title="' + title + '">' + title + '</button></a><br />'; //parse it now
                      resolve(str);
                 } else {
