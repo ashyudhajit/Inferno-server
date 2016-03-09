@@ -4,7 +4,6 @@
   */
  
  var https = require("https");
- var cheerio = require('cheerio');
  var request = require('request');
  var title = "";
  
