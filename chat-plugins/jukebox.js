@@ -12,7 +12,7 @@
      jukebox: function (target, room, user) {
          if (!this.canBroadcast()) return;
          var parts = target.split(',');
-         if (!target) return this.sendReply("/jukebox link, link, link - parses it to be in a music box");
+         if (!target) return this.sendReply("/jukebox link, link, link - parses it to be in a juke box");
          var str = '';
          var self = this;
          var parsed = parts.map(parse);
